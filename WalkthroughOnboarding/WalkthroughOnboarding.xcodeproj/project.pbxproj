@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0650CAC024E502E000442542 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650CABF24E502E000442542 /* LoginViewController.swift */; };
+		0650CAC324E503AE00442542 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650CAC224E503AE00442542 /* GlobalVariables.swift */; };
+		06DD4CDE24E437B000D5BB89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD4CDD24E437AF00D5BB89 /* HomeViewController.swift */; };
 		17111D112126893D008C7FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D102126893D008C7FBE /* AppDelegate.swift */; };
 		17111D132126893D008C7FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D122126893D008C7FBE /* ViewController.swift */; };
 		17111D162126893D008C7FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17111D142126893D008C7FBE /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0650CABF24E502E000442542 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0650CAC224E503AE00442542 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		06DD4CDD24E437AF00D5BB89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		17111D0D2126893D008C7FBE /* WalkthroughOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkthroughOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17111D102126893D008C7FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17111D122126893D008C7FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0650CAC124E5039A00442542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0650CAC224E503AE00442542 /* GlobalVariables.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		17111D042126893D008C7FBE = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +84,11 @@
 		17111D0F2126893D008C7FBE /* WalkthroughOnboarding */ = {
 			isa = PBXGroup;
 			children = (
+				17111D102126893D008C7FBE /* AppDelegate.swift */,
+				0650CAC124E5039A00442542 /* Model */,
 				17111D3021268A40008C7FBE /* Helpers */,
 				17111D2521268994008C7FBE /* View Controllers */,
 				17111D2221268963008C7FBE /* Models */,
-				17111D102126893D008C7FBE /* AppDelegate.swift */,
 				17111D142126893D008C7FBE /* Main.storyboard */,
 				17111D172126893F008C7FBE /* Assets.xcassets */,
 				17111D192126893F008C7FBE /* LaunchScreen.storyboard */,
@@ -94,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				17111D122126893D008C7FBE /* ViewController.swift */,
+				0650CABF24E502E000442542 /* LoginViewController.swift */,
+				06DD4CDD24E437AF00D5BB89 /* HomeViewController.swift */,
 				17111D29212689BC008C7FBE /* ATCClassicWalkthroughViewController.swift */,
 				17111D27212689BC008C7FBE /* ATCClassicWalkthroughViewController.xib */,
 				17111D26212689BC008C7FBE /* ATCWalkthroughViewController.swift */,
@@ -190,8 +207,11 @@
 				17111D2D212689BC008C7FBE /* ATCClassicWalkthroughViewController.swift in Sources */,
 				17111D132126893D008C7FBE /* ViewController.swift in Sources */,
 				17111D3221268A54008C7FBE /* UIImage.swift in Sources */,
+				06DD4CDE24E437B000D5BB89 /* HomeViewController.swift in Sources */,
+				0650CAC324E503AE00442542 /* GlobalVariables.swift in Sources */,
 				17111D112126893D008C7FBE /* AppDelegate.swift in Sources */,
 				17111D3621268B18008C7FBE /* UIViewController.swift in Sources */,
+				0650CAC024E502E000442542 /* LoginViewController.swift in Sources */,
 				17111D2421268982008C7FBE /* ATCWalkthroughModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

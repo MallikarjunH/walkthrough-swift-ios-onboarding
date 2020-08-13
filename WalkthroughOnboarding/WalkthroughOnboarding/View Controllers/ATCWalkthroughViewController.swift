@@ -13,9 +13,8 @@ protocol ATCWalkthroughViewControllerDelegate: class {
 }
 
 class ATCWalkthroughViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-    
   @IBOutlet var pageControl: UIPageControl!
-  @IBOutlet weak var skipButton: UIButton!
+  @IBOutlet weak var skipButtonOutlet: UIButton!
     
   weak var delegate: ATCWalkthroughViewControllerDelegate?
   
@@ -44,17 +43,17 @@ class ATCWalkthroughViewController: UIViewController, UIPageViewControllerDataSo
     self.addChildViewControllerWithView(pageController)
     pageControl.numberOfPages = viewControllers.count
     self.view.bringSubviewToFront(pageControl)
-    self.view.bringSubviewToFront(skipButton)
-    skipButton.addTarget(self, action: #selector(handleSkip), for: .touchUpInside)
+    self.view.bringSubviewToFront(skipButtonOutlet)
+    skipButtonOutlet.addTarget(self, action: #selector(handleSkip), for: .touchUpInside)
     super.viewDidLoad()
   }
-    
+  
   @objc func handleSkip() {
-      //print("Clicked on Skip Button")
-      self.removeChildViewController(self.pageController)
-      self.delegate?.walkthroughViewControllerDidFinishFlow(self)
+        //swiftyOnboard?.goToPage(index: 2, animated: true)
+        print("Clicked on Skip Button")
+        self.removeChildViewController(self.pageController)
+        self.delegate?.walkthroughViewControllerDidFinishFlow(self)
   }
-    
   public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
     if let index = self.index(of: viewController) {
       if index == 0 {

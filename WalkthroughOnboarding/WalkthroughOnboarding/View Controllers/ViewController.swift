@@ -24,15 +24,22 @@ class ViewController: UIViewController,  ATCWalkthroughViewControllerDelegate{
   }
   
   func walkthroughViewControllerDidFinishFlow(_ vc: ATCWalkthroughViewController) {
-   /* UIView.transition(with: self.view, duration: 1, options: .transitionFlipFromLeft, animations: {
+    
+    /*UIView.transition(with: self.view, duration: 1, options: .transitionFlipFromLeft, animations: {
       vc.view.removeFromSuperview()
       let viewControllerToBePresented = UIViewController()
       self.view.addSubview(viewControllerToBePresented.view)
     }, completion: nil)*/
-    UIView.transition(with: self.view, duration: 1, options: .transitionCrossDissolve, animations: {
+    
+    //This code is not for animation
+    UIView.transition(with: self.view, duration: 0, options: .transitionFlipFromLeft, animations: {
       vc.view.removeFromSuperview()
-      let viewControllerToBePresented = UIViewController()
-      self.view.addSubview(viewControllerToBePresented.view)
+       
+        //var window: UIWindow?
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.view.window!.rootViewController = homeVC;
+        
     }, completion: nil)
   }
   
@@ -42,4 +49,8 @@ class ViewController: UIViewController,  ATCWalkthroughViewControllerDelegate{
                                         bundle: nil,
                                         viewControllers: viewControllers)
   }
+  
+    @IBAction func loginButtonClicked(_ sender: Any) {
+        print("Clicked on Login")
+    }
 }
