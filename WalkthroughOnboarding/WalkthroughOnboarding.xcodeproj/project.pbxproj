@@ -10,6 +10,8 @@
 		0650CAC024E502E000442542 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650CABF24E502E000442542 /* LoginViewController.swift */; };
 		0650CAC324E503AE00442542 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650CAC224E503AE00442542 /* GlobalVariables.swift */; };
 		06DD4CDE24E437B000D5BB89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD4CDD24E437AF00D5BB89 /* HomeViewController.swift */; };
+		06F5FE7C24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5FE7A24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.swift */; };
+		06F5FE7D24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F5FE7B24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.xib */; };
 		17111D112126893D008C7FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D102126893D008C7FBE /* AppDelegate.swift */; };
 		17111D132126893D008C7FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D122126893D008C7FBE /* ViewController.swift */; };
 		17111D162126893D008C7FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17111D142126893D008C7FBE /* Main.storyboard */; };
@@ -17,9 +19,7 @@
 		17111D1B2126893F008C7FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17111D192126893F008C7FBE /* LaunchScreen.storyboard */; };
 		17111D2421268982008C7FBE /* ATCWalkthroughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D2321268982008C7FBE /* ATCWalkthroughModel.swift */; };
 		17111D2A212689BC008C7FBE /* ATCWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D26212689BC008C7FBE /* ATCWalkthroughViewController.swift */; };
-		17111D2B212689BC008C7FBE /* ATCClassicWalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17111D27212689BC008C7FBE /* ATCClassicWalkthroughViewController.xib */; };
 		17111D2C212689BC008C7FBE /* ATCWalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17111D28212689BC008C7FBE /* ATCWalkthroughViewController.xib */; };
-		17111D2D212689BC008C7FBE /* ATCClassicWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D29212689BC008C7FBE /* ATCClassicWalkthroughViewController.swift */; };
 		17111D3221268A54008C7FBE /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D3121268A54008C7FBE /* UIImage.swift */; };
 		17111D3421268AD4008C7FBE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D3321268AD4008C7FBE /* UIColor.swift */; };
 		17111D3621268B18008C7FBE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17111D3521268B18008C7FBE /* UIViewController.swift */; };
@@ -29,6 +29,8 @@
 		0650CABF24E502E000442542 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0650CAC224E503AE00442542 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		06DD4CDD24E437AF00D5BB89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06F5FE7A24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCClassicWalkthroughViewController.swift; sourceTree = "<group>"; };
+		06F5FE7B24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCClassicWalkthroughViewController.xib; sourceTree = "<group>"; };
 		17111D0D2126893D008C7FBE /* WalkthroughOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkthroughOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17111D102126893D008C7FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17111D122126893D008C7FBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,9 +40,7 @@
 		17111D1C2126893F008C7FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17111D2321268982008C7FBE /* ATCWalkthroughModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCWalkthroughModel.swift; sourceTree = "<group>"; };
 		17111D26212689BC008C7FBE /* ATCWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCWalkthroughViewController.swift; sourceTree = "<group>"; };
-		17111D27212689BC008C7FBE /* ATCClassicWalkthroughViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCClassicWalkthroughViewController.xib; sourceTree = "<group>"; };
 		17111D28212689BC008C7FBE /* ATCWalkthroughViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCWalkthroughViewController.xib; sourceTree = "<group>"; };
-		17111D29212689BC008C7FBE /* ATCClassicWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCClassicWalkthroughViewController.swift; sourceTree = "<group>"; };
 		17111D3121268A54008C7FBE /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		17111D3321268AD4008C7FBE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		17111D3521268B18008C7FBE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -111,8 +111,8 @@
 				17111D122126893D008C7FBE /* ViewController.swift */,
 				0650CABF24E502E000442542 /* LoginViewController.swift */,
 				06DD4CDD24E437AF00D5BB89 /* HomeViewController.swift */,
-				17111D29212689BC008C7FBE /* ATCClassicWalkthroughViewController.swift */,
-				17111D27212689BC008C7FBE /* ATCClassicWalkthroughViewController.xib */,
+				06F5FE7A24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.swift */,
+				06F5FE7B24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.xib */,
 				17111D26212689BC008C7FBE /* ATCWalkthroughViewController.swift */,
 				17111D28212689BC008C7FBE /* ATCWalkthroughViewController.xib */,
 			);
@@ -189,7 +189,7 @@
 			files = (
 				17111D1B2126893F008C7FBE /* LaunchScreen.storyboard in Resources */,
 				17111D2C212689BC008C7FBE /* ATCWalkthroughViewController.xib in Resources */,
-				17111D2B212689BC008C7FBE /* ATCClassicWalkthroughViewController.xib in Resources */,
+				06F5FE7D24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.xib in Resources */,
 				17111D182126893F008C7FBE /* Assets.xcassets in Resources */,
 				17111D162126893D008C7FBE /* Main.storyboard in Resources */,
 			);
@@ -204,7 +204,6 @@
 			files = (
 				17111D2A212689BC008C7FBE /* ATCWalkthroughViewController.swift in Sources */,
 				17111D3421268AD4008C7FBE /* UIColor.swift in Sources */,
-				17111D2D212689BC008C7FBE /* ATCClassicWalkthroughViewController.swift in Sources */,
 				17111D132126893D008C7FBE /* ViewController.swift in Sources */,
 				17111D3221268A54008C7FBE /* UIImage.swift in Sources */,
 				06DD4CDE24E437B000D5BB89 /* HomeViewController.swift in Sources */,
@@ -212,6 +211,7 @@
 				17111D112126893D008C7FBE /* AppDelegate.swift in Sources */,
 				17111D3621268B18008C7FBE /* UIViewController.swift in Sources */,
 				0650CAC024E502E000442542 /* LoginViewController.swift in Sources */,
+				06F5FE7C24FE945700C3BCD0 /* ATCClassicWalkthroughViewController.swift in Sources */,
 				17111D2421268982008C7FBE /* ATCWalkthroughModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController,  ATCWalkthroughViewControllerDelegate{
   let walkthroughs = [
-    ATCWalkthroughModel(title: "Quick Overview", subtitle: "Quickly visualize important business metrics. The overview in the home tab shows the most important metrics to monitor how your business is doing in real time.", icon: "intro1-img"),
-    ATCWalkthroughModel(title: "Analytics", subtitle: "Dive deep into charts to extract valuable insights and come up with data driven product initiatives, to boost the success of your business.", icon: "bars-icon"),
-    ATCWalkthroughModel(title: "Dashboard Feeds", subtitle: "View your sales feed, orders, customers, products and employees.", icon: "intro2-img"),
-    ATCWalkthroughModel(title: "Get Notified", subtitle: "Receive notifications when critical situations occur to stay on top of everything important.", icon: "intro1-img"),
+    ATCWalkthroughModel(title: "Approve all documents using Electronic & Digital Signatures from Anywhere, Anytime.", subtitle: "", icon: "intro1-img"),
+    ATCWalkthroughModel(title: "Send documents from your Camera, Files, Box for Signing by Multiple Parties.", subtitle: "", icon: "intro2-img"),
+    //ATCWalkthroughModel(title: "Dashboard Feeds", subtitle: "View your sales feed, orders, customers, products and employees.", icon: "activity-feed-icon"),
+    //ATCWalkthroughModel(title: "Get Notified", subtitle: "Receive notifications when critical situations occur to stay on top of everything important.", icon: "bell-icon"),
   ]
   
   override func viewDidLoad() {
@@ -50,7 +50,4 @@ class ViewController: UIViewController,  ATCWalkthroughViewControllerDelegate{
                                         viewControllers: viewControllers)
   }
   
-    @IBAction func loginButtonClicked(_ sender: Any) {
-        print("Clicked on Login")
-    }
 }

@@ -12,11 +12,11 @@ import UIKit
 final class GlobalVariables: NSObject {
     static let sharedInstance = GlobalVariables()
     
-    private override init() { }
-    
     // func foo() { }
     var userLoggedIn:Bool = false
     var showIntroScreen:Bool = true
+    
+    private override init() { }
     
 }
 

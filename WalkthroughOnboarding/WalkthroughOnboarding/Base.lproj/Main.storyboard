@@ -15,7 +15,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -100,14 +100,24 @@
                                     <action selector="loginButtonClicked:" destination="q8r-la-woN" eventType="touchUpInside" id="3zf-5A-3Xi"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro1-img" translatesAutoresizingMaskIntoConstraints="NO" id="PqJ-QI-FKF">
+                                <rect key="frame" x="66" y="299" width="282" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="Mo0-ap-vZ9"/>
+                                    <constraint firstAttribute="height" constant="235" id="t1p-5n-JDc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SPh-9A-fAy" firstAttribute="trailing" secondItem="PqJ-QI-FKF" secondAttribute="trailing" constant="66" id="2Tw-3Y-aa7"/>
                             <constraint firstItem="NVj-fO-rjU" firstAttribute="top" secondItem="SPh-9A-fAy" secondAttribute="top" constant="66" id="5v1-Ee-1HK"/>
                             <constraint firstItem="4g8-9r-6hz" firstAttribute="top" secondItem="NVj-fO-rjU" secondAttribute="bottom" constant="36" id="CGb-7T-qWo"/>
                             <constraint firstItem="4g8-9r-6hz" firstAttribute="leading" secondItem="SPh-9A-fAy" secondAttribute="leading" constant="95" id="Oc6-8l-lwW"/>
                             <constraint firstItem="SPh-9A-fAy" firstAttribute="trailing" secondItem="NVj-fO-rjU" secondAttribute="trailing" constant="127" id="Pqa-bg-2n2"/>
+                            <constraint firstItem="PqJ-QI-FKF" firstAttribute="top" secondItem="4g8-9r-6hz" secondAttribute="bottom" constant="48" id="QNY-Km-Kbt"/>
                             <constraint firstItem="NVj-fO-rjU" firstAttribute="leading" secondItem="SPh-9A-fAy" secondAttribute="leading" constant="95" id="gmK-wY-zJt"/>
+                            <constraint firstItem="PqJ-QI-FKF" firstAttribute="leading" secondItem="SPh-9A-fAy" secondAttribute="leading" constant="66" id="zHA-Eb-f1s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SPh-9A-fAy"/>
                     </view>
@@ -136,4 +146,7 @@
             <point key="canvasLocation" x="1105.7971014492755" y="95.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="intro1-img" width="426" height="336"/>
+    </resources>
 </document>
